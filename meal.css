@@ -1,0 +1,183 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+#title {
+    text-align: center;
+    padding: 20px;
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin: 20px auto 0;
+    border-radius: 5px;
+}
+
+@media(max-width:600px)
+{
+     .search-box{
+        width: 100%;
+        background: #fff;
+        margin: 20px auto 0;
+        border-radius: 5px;
+    }
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+#result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+
+#result-box ul li{
+    flex: 1;
+    list-style: none;
+    width: auto;
+    border-radius: 3px;
+/*    padding: 15px 10px;*/
+    cursor: pointer;
+}
+
+#result-box ul li:hover{
+    background: #e9f3ff;
+}
+
+.search-result {
+  width: 100%;
+  height: 100%;
+  padding: 10px; /* Adjust padding as needed */
+  /*box-sizing: border-box; 
+  background-color: #ffffff;
+  border: 1px solid #ddd; 
+  border-radius: 5px; */
+}
+
+#navigation {
+    text-align: center;
+    background-color: #e74c3c;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main,
+.favourite {
+    color: #fff;
+    cursor: pointer;
+}
+
+.main:hover {
+    background-color: yellow;
+    text-decoration: underline;
+    color: black; /* Change the color to your desired hover effect */
+}
+
+.favourite:hover {
+    background-color: yellow;
+    text-decoration: underline;
+    color: black;
+    /* Change the color to your desired hover effect */
+}
+
+#list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.more_info {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.more_info:hover {
+    background-color: yellow;
+    text-decoration: underline;
+    color: black;
+    /* Change the color to your desired hover effect */
+}
+
+
+.mealdescription {
+    padding: 10px;
+}
+
+#image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#description {
+    margin-top: 10px;
+}
+
+#description h4 {
+    margin: 0;
+    color: #333;
+}
+
+#description p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.fav {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fav:hover{
+    background-color: yellow;
+    text-decoration: underline;
+}
+
+.remove {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.remove:hover{
+    background-color: yellow;
+    text-decoration: underline;
+}
